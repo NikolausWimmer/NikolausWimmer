@@ -22,7 +22,7 @@
         }
         main {
             padding: 40px 20px;
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
         }
         h1, h2 {
@@ -38,6 +38,17 @@
         a:hover {
             text-decoration: underline;
         }
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .portrait {
+            max-width: 180px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -46,10 +57,14 @@
         <p>Externer Lehrender für Statistik & empirische Sozialforschung</p>
     </header>
     <main>
-        <section>
-            <h2>Kurzprofil</h2>
-            <p>Erfahrener Lehrender im Bereich Statistik, quantitativer Methoden und Forschungspraxis. Aktuell an der Universität Wien tätig, mit Fokus auf angewandte Datenanalyse und forschungspraktische Ausbildung von Studierenden.</p>
-        </section>
+        <div class="top">
+            <div style="flex: 1;">
+                <h2>Kurzprofil</h2>
+                <p>Erfahrener Lehrender im Bereich Statistik, quantitativer Methoden und Forschungspraxis. Aktuell an der Universität Wien tätig, mit Fokus auf angewandte Datenanalyse und forschungspraktische Ausbildung von Studierenden.</p>
+            </div>
+            <img src="portrait.jpg" alt="Porträt Nikolaus Wimmer" class="portrait">
+        </div>
+
         <section>
             <h2>Kursangebot</h2>
             <ul>
@@ -58,6 +73,7 @@
                 <li><strong>Forschungspraxis:</strong> Entwicklung eigener Fragestellungen, Datenerhebung, Ergebnispräsentation</li>
             </ul>
         </section>
+
         <section>
             <h2>Lehrphilosophie</h2>
             <ul>
@@ -68,6 +84,12 @@
                 <li>Kombination aus Präsenz- und Distance-Learning</li>
             </ul>
         </section>
+
+        <section>
+            <h2>Portfolio</h2>
+            <p><a href="WIMMER_Portfolio.pdf" target="_blank">Hier Portfolio als PDF ansehen oder herunterladen</a></p>
+        </section>
+
         <section>
             <h2>Kontakt</h2>
             <p>E-Mail: <a href="mailto:nikolaus.wimmer42@gmail.com">nikolaus.wimmer42@gmail.com</a></p>
