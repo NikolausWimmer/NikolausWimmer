@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV – Nikolaus Wimmer</title>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 0; background: #fff; color: #1a1a1a; }
+    header, footer { background: #002f5f; color: #fff; padding: 20px; text-align: center; }
+    nav { background: #e6e6e6; padding: 10px; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: #002f5f; font-weight: bold; }
+    main { max-width: 900px; margin: auto; padding: 40px 20px; }
+    h1, h2 { color: #002f5f; }
+    ul { padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Curriculum Vitae</h1>
+  </header>
+  <nav>
+    <a href="index_en.html">Home</a>
+    <a href="cv.html">CV</a>
+    <a href="downloads_en.html">Downloads</a>
+    <a href="index.html">DE</a>
+  </nav>
+  <main>
+    <h2>Professional Experience</h2>
+    <ul>
+      <li><strong>External Lecturer</strong>, University of Vienna – Statistics, Quantitative Methods, Research Practice</li>
+      <li><strong>Blue Book Trainee</strong>, European Commission – Science Communication (REA)</li>
+      <li><strong>Research Assistant</strong>, University of Vienna – Political Communication & Quantitative Research</li>
+      <li><strong>Junior Marketing Manager</strong>, iamstudent.at – Campaigns, Social Media</li>
+      <li><strong>Internships</strong>, Austrian Association of Municipalities & Military – Communications, Public Relations</li>
+    </ul>
+
+    <h2>Education</h2>
+    <ul>
+      <li><strong>MA in Communication Studies</strong>, University of Vienna (with distinction)</li>
+      <li><strong>BA in Communication Studies</strong>, University of Vienna (with distinction)</li>
+      <li><strong>BA in Political Science</strong>, University of Vienna (with distinction)</li>
+      <li><strong>High School Diploma</strong>, BG Berta von Suttner, Vienna (with distinction)</li>
+    </ul>
+  </main>
+  <footer>
+    <p>&copy; 2025 Nikolaus Wimmer</p>
+  </footer>
+</body>
+</html>
