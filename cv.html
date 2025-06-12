@@ -1,17 +1,71 @@
-<!DOCTYPE html>
+# Englische Version des visuellen Lebenslaufs
+cv_html_en = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CV – Nikolaus Wimmer</title>
   <style>
-    body { font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 0; background: #fff; color: #1a1a1a; }
-    header, footer { background: #002f5f; color: #fff; padding: 20px; text-align: center; }
-    nav { background: #e6e6e6; padding: 10px; text-align: center; }
-    nav a { margin: 0 15px; text-decoration: none; color: #002f5f; font-weight: bold; }
-    main { max-width: 900px; margin: auto; padding: 40px 20px; }
-    h1, h2 { color: #002f5f; }
-    ul { padding-left: 20px; }
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #1a1a1a;
+    }
+    header, footer {
+      background: #002f5f;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #e6e6e6;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #002f5f;
+      font-weight: bold;
+    }
+    nav span {
+      float: right;
+    }
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h1, h2 {
+      color: #002f5f;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .cv-entry {
+      display: flex;
+      border-left: 3px solid #002f5f;
+      padding: 10px 0 10px 15px;
+      margin: 20px 0;
+    }
+    .cv-date {
+      width: 150px;
+      font-weight: bold;
+      color: #555;
+      flex-shrink: 0;
+    }
+    .cv-details {
+      flex-grow: 1;
+    }
+    .cv-details strong {
+      display: block;
+      font-size: 1.05em;
+      margin-bottom: 4px;
+    }
+    .cv-section {
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
@@ -22,28 +76,106 @@
     <a href="index_en.html">Home</a>
     <a href="cv.html">CV</a>
     <a href="downloads_en.html">Downloads</a>
-    <span style="float:right;">Sprache: <a href="index.html">DE</a> | <a href="index_en.html">EN</a></span>
-</nav>
+    <span>Language: <a href="index.html">DE</a> | <a href="index_en.html">EN</a></span>
+  </nav>
   <main>
-    <h2>Professional Experience</h2>
-    <ul>
-      <li><strong>External Lecturer</strong>, University of Vienna – Statistics, Quantitative Methods, Research Practice</li>
-      <li><strong>Blue Book Trainee</strong>, European Commission – Science Communication (REA)</li>
-      <li><strong>Research Assistant</strong>, University of Vienna – Political Communication & Quantitative Research</li>
-      <li><strong>Junior Marketing Manager</strong>, iamstudent.at – Campaigns, Social Media</li>
-      <li><strong>Internships</strong>, Austrian Association of Municipalities & Military – Communications, Public Relations</li>
-    </ul>
+    <div class="cv-section">
+      <h2>Professional Experience</h2>
 
-    <h2>Education</h2>
-    <ul>
-      <li><strong>MA in Communication Studies</strong>, University of Vienna (with distinction)</li>
-      <li><strong>BA in Communication Studies</strong>, University of Vienna (with distinction)</li>
-      <li><strong>BA in Political Science</strong>, University of Vienna (with distinction)</li>
-      <li><strong>High School Diploma</strong>, BG Berta von Suttner, Vienna (with distinction)</li>
-    </ul>
+      <div class="cv-entry">
+        <div class="cv-date">since 05/2025</div>
+        <div class="cv-details">
+          <strong>Press Officer</strong>
+          Main Association of Austrian Social Security Institutions<br/>
+          Strategic communication & media relations
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-date">since 2022</div>
+        <div class="cv-details">
+          <strong>External Lecturer</strong>
+          University of Vienna<br/>
+          Statistics, Quantitative Methods, Research Practice
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-date">2021–2022</div>
+        <div class="cv-details">
+          <strong>Blue Book Trainee</strong>
+          European Commission – Research Executive Agency (REA)<br/>
+          Science & research communication, Horizon Europe
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-date">2020–2021</div>
+        <div class="cv-details">
+          <strong>Research Assistant</strong>
+          University of Vienna – Political Communication<br/>
+          Quantitative research & teaching support
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-date">2019–2020</div>
+        <div class="cv-details">
+          <strong>Junior Marketing Manager</strong>
+          iamstudent.at / iamstudent.de<br/>
+          Social media, community management, campaign development
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-date">2018–2019</div>
+        <div class="cv-details">
+          <strong>Internships & Military Service</strong>
+          Austrian Association of Municipalities & ABC Defense Command<br/>
+          Communication, editing, public affairs
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-section">
+      <h2>Education</h2>
+
+      <div class="cv-entry">
+        <div class="cv-date">2019–2022</div>
+        <div class="cv-details">
+          <strong>MA Communication Studies</strong>
+          University of Vienna – with distinction
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-date">2015–2019</div>
+        <div class="cv-details">
+          <strong>BA Communication Studies</strong>
+          University of Vienna – with distinction
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-date">2015–2019</div>
+        <div class="cv-details">
+          <strong>BA Political Science</strong>
+          University of Vienna – with distinction
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-date">Matura</div>
+        <div class="cv-details">
+          <strong>BG Berta von Suttner (Schulschiff)</strong>
+          Vienna – with distinction
+        </div>
+      </div>
+    </div>
   </main>
   <footer>
     <p>&copy; 2025 Nikolaus Wimmer</p>
   </footer>
 </body>
 </html>
+"""
